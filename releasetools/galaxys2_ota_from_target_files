@@ -52,9 +52,6 @@ def WriteFullOTAPackage(input_zip, output_zip):
                                              OPTIONS.info_dict),
               }
 
-  # AOKP doesn't have BACKUPTOOL.SH
-  OPTIONS.backuptool = False
-
   device_specific = common.DeviceSpecificParams(
       input_zip=input_zip,
       input_version=OPTIONS.info_dict["recovery_api_version"],
